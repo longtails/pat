@@ -44,8 +44,7 @@ double compute()
 		{
 			//关于erase()后的vector内存变化待验证
 			customer.erase(customer.begin()+i);
-			//i--;有没有这个不起作用，上边的size()显示7,下边显示6
-			//cout<<"test"<<i<<"size"<<customer.size()<<endl;
+			i--;//调整访问迭代
 			continue;
 		}
 		sort(waiter.begin(),waiter.end(),comp);
